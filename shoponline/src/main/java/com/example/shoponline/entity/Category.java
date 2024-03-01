@@ -3,6 +3,8 @@ package com.example.shoponline.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,4 +23,5 @@ public class Category {
 
     @Column(name = "status")
     private Integer status;
+
 }

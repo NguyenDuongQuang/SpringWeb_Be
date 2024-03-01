@@ -1,8 +1,9 @@
 package com.example.shoponline.entity;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 
+import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity

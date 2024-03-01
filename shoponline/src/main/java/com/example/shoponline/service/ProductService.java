@@ -1,18 +1,21 @@
 package com.example.shoponline.service;
 
 import com.example.shoponline.entity.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface ProductService {
-    Product create(Product product);
+    List<Product> getAll();
 
-    Optional<Product> getProductById(Long id);
+    Product create(Product product) throws Exception;
 
-    List<Product>getAll();
+    Optional<Product> getProductById(Integer id);
 
-//    Product update(Product product);
+    Product updateById(Product product,Integer id) throws Exception;
 
-    void deleteProduct(Long id);
+    Page<Product> getProduct(Pageable pageable);
+    void deleteProductById(Integer id);;
 }
