@@ -43,6 +43,9 @@ public class Product {
     @Column(name = "quantity")
     private Integer quantity;
 
+    @Column(name = "status")
+    private Integer status;
+
     @ManyToOne(fetch =FetchType.LAZY)
     @JoinColumn(name = "categoryid",referencedColumnName = "id")
     private Category category;

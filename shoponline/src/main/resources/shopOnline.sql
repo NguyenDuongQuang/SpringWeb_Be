@@ -1,5 +1,5 @@
-create database shopOnline;
-use shopOnline;
+create database shoppingOnline;
+use shoppingOnline;
 create table accounts(
                          `id` int primary key NOT NULL,
                          `username` nvarchar(50) NOT NULL,
@@ -40,6 +40,7 @@ CREATE TABLE products(
                          `name` varchar(255) NULL,
                          `price` float NOT NULL,
                          `quantity` int NOT NULL,
+                         `status` int NOT NULL,
                          `categoryid` int NULL,
                          constraint FKdujockiancjr5q3jqf74hc90h
                              foreign key (categoryid) references categories (id)
